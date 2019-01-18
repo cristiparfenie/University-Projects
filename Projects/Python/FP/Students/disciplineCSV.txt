@@ -1,0 +1,8 @@
+1,fizica
+2,mate
+3,info
+4,chimie
+5,romana
+6,desen
+7,muzica
+8,engleza
