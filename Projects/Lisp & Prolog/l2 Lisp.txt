@@ -1,0 +1,37 @@
+;9. Convert a tree of type (1) to type (2)
+(defun rightSon (L C)
+	(cond
+		((numberp (car L)) (rightSon (cdr L) (+ C (car L))))
+		((and (atom (car L)) (= C 0)) L)
+		(T (rightSon (cdr L) (- C 1)))
+	)
+)
+
+
+
+(defun convert (L)
+	(cond 
+		((= (cadr L) 0) (list (car L)))
+		((= (cadr L) 1) (cons (car L) (list (convert (cddr L)))))
+		(T	(cons (car L) (cons (convert (cddr L)) (list (convert (rightSon (cddr L) 1))))))
+	)
+)
+
+(print(convert '(A 2 B 0 C 2 D 0 D 0)))
+
+
+;4. Convert a tree of type (2) to type (1)
+
+;transforme (L1..Ln) - (L1 2) U transforme(L2) U transforme (L3), if L2 != NIL && L3 != NIL
+;                      (L1 1) U transforme(L2), if L2 != NIL
+;					   (L1 0), otherwise
+
+(defun transforme (L)
+    (cond 
+		((and (cdr L) (cddr L)) (append (list (car L) 2) (append (transforme (cadr L)) (transforme (caddr L) ) ) ))
+		((cdr L) (append (list (car L) 1) (transforme (cadr L))) )
+		(T (list (car L) 0) )
+	)
+)
+
+;

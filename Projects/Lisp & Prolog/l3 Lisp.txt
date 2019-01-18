@@ -1,0 +1,18 @@
+;removeL(X E) - nil , atom(X) & X = E
+;             -	[X] , atom(X)
+;			  - [U removeL(Xi E)], otherwise     ... where U is append from 1 to X.size
+
+(defun removeL (X E)
+	(cond 
+		((and (atom X) (= X E)) nil)
+		((atom X) (list X))
+		(T (list (mapcan #'(lambda (X) (removeL X E)) X)))
+	)
+)
+
+(defun removeMain(X E)
+	(car (removeL X E))
+)
+
+;9. Write a function that removes all occurrences of an atom from any level of a list.
+(print(removeMain '(1 2 (2 4) ((2 3)) 3) 2))

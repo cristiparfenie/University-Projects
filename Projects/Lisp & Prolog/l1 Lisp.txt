@@ -1,0 +1,94 @@
+;gnu clisp 2.49
+
+(write-line "a) Write a function that merges two sorted linear lists and keeps double values.")
+
+(defun merg(A B)
+(COND
+((NULL A) B)
+((NULL B) A)
+((<(CAR A) (CAR B))(CONS (CAR A) (merg (CDR A) B)))
+((>=(CAR A) (CAR B))(CONS (CAR B) (merg (CDR B) A)))))
+
+(print(merg '(1 2 2 6)'(2 3 4 5)))
+
+
+
+(write-line"")(write-line"")
+(write-line"b) Write a function to replace an element E by all elements of a list L1 at all levels of a given list L.")
+
+(defun b(E L1 L)
+(COND
+ ((NULL L)())
+ ((=(CAR L)E)(APPEND L1 (b E L1 (CDR L))))
+ ((/=(CAR L)E)(CONS (CAR L) (b E L1 (CDR L))))))
+
+(print(b 1 '(1 2 3 4)'(5 1 5 4 1 9 1)))
+
+
+
+(write-line"")(write-line"")
+(write-line"c) Write a function to determines the sum of two numbers in list representation, and returns the
+corresponding decimal number, without transforming the representation of the number from list to
+number.")
+
+(defun addC (L C)
+	(cond
+		((and (null L) (= C 0)) nil)
+		((and (null L) (not (= C 0))) (list C))
+		(T (cons (mod (+ (car L) C) 10) (addC (cdr L) (floor (+ (car L) C) 10))))
+	)
+)
+
+(defun sumL (L1 L2 C)
+	(cond 
+		((and(null L1) (= C 0)) L2)
+		((and(null L2) (= C 0)) L1)
+		((null L1) (addC L2 C))
+		((null L2) (addC L1 C))
+		(T (cons (mod (+ (car L1) (+ (car L2) C)) 10) (sumL (cdr L1) (cdr L2) (floor (+ (car L1) (+ (car L2) C)) 10))))
+	)
+)
+
+(defun solve(L1 L2)
+	(reverse (sumL (reverse L1) (reverse L2) 0))
+)
+
+(print(solve '(1 2 3) '(1 2 3))) 
+
+(write-line"")(write-line"")
+(write-line"d) Write a function to return the greatest common divisor of all numbers in a linear list.")
+
+(defun d(L)
+    (cond
+        ((null L)0)
+        (t(GCD (car L) (d (cdr L))))))
+
+(print(d '(4 16 64 85)))
+
+
+;gnu clisp 2.49
+;numerele care apar apar doar in l1 si numerele care apar doar in l2
+(print "Hello, world!")
+
+(defun deep-find (L n)
+  (cond
+   ((null L) nil)
+   ((equal n (car L)) t)
+   ((deep-find (cdr L) n))))
+
+(defun re(A B)
+    (cond
+        ((NULL A) ())
+        ((NULL B) ())
+        ((NOT(deep-find B (CAR A)))(CONS (CAR A)(re (CDR A) B)))
+        (T(re(CDR A) B))
+        ))
+
+
+(defun solve(A B)
+    (APPEND (re A B) (re B A)))
+
+(print(solve '(1 2 3 4 6 7) '(2 4 3 5 9)))
+           
+           
+   

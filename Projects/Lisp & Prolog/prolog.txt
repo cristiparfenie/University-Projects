@@ -1,0 +1,39 @@
+%a.)  Write a predicate to determine if a list has even numbers of elements without counting the elements from the list
+% evenSize([1,2,3,4,5,6]).
+evenSize([_]):-
+    false.
+evenSize([]).
+evenSize([_,_|T]) :-
+    evenSize(T).
+
+
+%b.)  Write a predicate to delete first occurrence of the minimum number from a list.
+% del([3,3,2,4,2,5],R).
+
+deleteElem([],_,_).
+deleteElem([H|T],E,R):-
+    	H=:=E,
+    	%deleteElem(T,E,TR),
+    	R=T.
+deleteElem([H|T],E,R):-
+           deleteElem(T,E,TR),
+           R=[H|TR].
+
+mini([],EL,E):-
+    E=EL.
+mini([H|T],EL,E):-
+           H<EL,
+    		EX=H,
+    		mini(T,EX,E).
+mini([H|T],EL,E):-
+    		mini(T,EL,E).
+
+del([],_).
+del([H|T],LR):-
+    	mini([H|T],H,EL),
+    	deleteElem([H|T],EL,LR).
+
+
+
+
+
