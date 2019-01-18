@@ -1,0 +1,592 @@
+﻿ExeStack:
+
+((Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f));
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+(Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f))
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in)
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(Read(var_c,var_f);
+print(var_c))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+Read(var_c,var_f)
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+ExeStack:
+
+((Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f));
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+(Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f))
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in)
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(Read(var_c,var_f);
+print(var_c))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+Read(var_c,var_f)
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+ExeStack:
+
+((Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f));
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+(Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f))
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in)
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(Read(var_c,var_f);
+print(var_c))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+Read(var_c,var_f)
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+ExeStack:
+
+((Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f));
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+(Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in);
+Read(var_c,var_f))
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Open(var_fC:\FACULTATE\MAP\Lab7\Lab7\test.in)
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+Output list:
+File Table:
+ExeStack:
+
+Read(var_c,var_f)
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(print(var_c);
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0)))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+if(var_c) then((Read(var_c,var_f);
+print(var_c))) else(print(0))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+(Read(var_c,var_f);
+print(var_c))
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+Read(var_c,var_f)
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 15
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+print(var_c)
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+CloseFile(var_f)
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
+1 : C:\FACULTATE\MAP\Lab7\Lab7\test.in
+ExeStack:
+
+SymbolTable:
+
+var_f : 1
+var_c : 50
+Output list:
+15
+50
+File Table:
